@@ -2,22 +2,22 @@
  This script will export specified folders from a CSV file from Outlook and   save them into folders with dates they were received.
 
 
-.SYNOPSIS
+# .SYNOPSIS
 
   Export email messages with attachments from Outlook desktop client
   
-.DESCRIPTION
+# .DESCRIPTION
 
   This script will export specified folders from a CSV file from Outlook and
   save them into folders with dates they were received.
   
-.OUTPUTS
+# .OUTPUTS
 
   .EML files including attachments for that file, into respective dated folders and parent folder
   
-.NOTES
+# .NOTES
 
-  Version:        1.7
+  Version:        1.9
   
   Author:         Dylan Reynolds
   
@@ -26,7 +26,7 @@
   Purpose/Change: Better error handling and logging specific messages that failed to collect
   
   
-.DEPENDENCIES
+# .DEPENDENCIES
 
 
   Requires that you run "Collect-OutlookFoldersAndStatsIncludingZeroEntries" or "Collect-OutlookFoldersAndStats"
@@ -49,7 +49,7 @@
   Please check OutlookConnector is available and you have elevated priviledges to install and run
   See author for details: https://github.com/iricigor/OutlookConnector
   
-.EXAMPLE
+# .EXAMPLE
 
   Run the script with .\ExportSpecifiedFoldersFromOutlook and select either Y to continue or N to end.
 
