@@ -1,0 +1,1 @@
+Get-OutlookFolder -Recurse | Select-Object Name,FullFolderPath,@{Name = "Count"; Expression = {$_.Items.Count}} | Where-Object Count -gt 0 | Sort-Object Count -Descending | Export-CSV "C:\temp\MailboxItems.csv"
